@@ -35,5 +35,7 @@ My project from last Friday is also incomplete and I need that to be submitted b
 | :--------: | :--------: |:--------:| :--------: |
 | javascript | Udemy video tutorial by _Chris Deleon_ | Vanilla javascript fundamentals such as native methods like setInterval(), fillRect(), and arc() | https://www.udemy.com/code-your-first-game/learn/v4/overview |
 | LinkedIn | Clean up my LinkedIn | | https://www.linkedin.com/in/cameron-button/ |
+| Game Dev | find meetups | | https://www.meetup.com/UnityPDX/events/kpvbsmyxkbzb/?action=rsvp&response=yes |
+| REACTJS | find meetups | | https://www.meetup.com/Portland-ReactJS/ |
 
 #### Reflection & Next Steps
