@@ -35,11 +35,7 @@ function(evt){
   let mousePos = calculateMousePos(evt);
   player1Y = mousePos.y - (PADDLE_HEIGHT/2);
 });
-
-
 }
-
-
 
 function drawEverything(){
   drawRect(0,0, canvas.width, canvas.height, 'black');  //defines a rectangle with the drawRect() function
@@ -76,9 +72,9 @@ function moveBall(){
   }
 
   if ( ballX + ballRadius <= player1X + PADDLE_WIDTH) {
+    debugger;
     if (ballY > player1Y && ballY < player1Y + PADDLE_HEIGHT) {
       ballSpeedX *= -1;
-      ballSpeedY *= -1;
     } else {
       resetBall();
     }
