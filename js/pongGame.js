@@ -4,6 +4,7 @@ let ballY = 50;
 let ballWidth = 25;
 let ballHeight = 25;
 let ballSpeedX = 10;
+let ballEdge = ballX + ballWidth/2;
 
 
 window.onload = function(){
@@ -20,10 +21,11 @@ window.onload = function(){
 
 function drawEverything(){
   drawRect(0,0, canvas.width, canvas.height, 'black');  //defines a rectangle with the drawRect() function
+  drawRect(ballX,ballY, ballWidth, ballHeight, 'red');
 }
 
 function moveEverything() {
-
+  moveBall();
 }
 
 function drawRect(topX, topY, width, height, color) { // dry up code and make it reusable by making the fillRect() method into a helper function
@@ -33,4 +35,11 @@ function drawRect(topX, topY, width, height, color) { // dry up code and make it
 
 function drawCircle(centerX, centerY, width, height, color) {
 
+}
+
+function moveBall(){
+  ballX += ballSpeedX;
+  if(ballX > canvas.width || ballX < 0){
+    ballSpeedX *= -1;
+  }
 }
