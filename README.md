@@ -12,10 +12,27 @@
 
 #### Plan
 
+I need to focus on skill development, especially with vanilla javascript.  I should spend time working through video tutorials and reading documentation.  I will post links and images in this README as well.
+
+My Github needs to be cleaned up quite a lot.  There are files with commented out code, and many repositories do not have READMEs.  To resolve this I will spend time working through my projects adding READMEs and pruning content.
+
+My LinkedIn has typos and grammatical errors as well as unpolished content.  I need to craft my profile to present myself like a valuable asset.
+
+It looks like my plan for my capstone project might fall through.  I have tried to contact Nick and Sadie from Rune and Board, but have not had a reply.  I have also requested their permission to redesign their website as just a portfolio piece but have not heard back.  Without their consent I do not feel comfortable working on that project and should look into alternatives that I am also passionate about.
+
+My project from last Friday is also incomplete and I need that to be submitted before today is over.
+
+
+
 
 #### Work
 
   * Read prompt on epicenter
   * Complete Self-Assessment
+  * Make a plan
+
+| Skill    |  Work      | Links     |
+| :--------: | :--------: | :--------: |
+| javascript | video tutorials | youtube link |
 
 #### Reflection & Next Steps
