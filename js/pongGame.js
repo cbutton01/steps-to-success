@@ -1,10 +1,9 @@
 let canvas, canvasContext;
 let ballX = 50;
 let ballY = 50;
-let ballWidth = 25;
-let ballHeight = 25;
+let ballRadius = 10;
 let ballSpeedX = 10;
-let ballEdge = ballX + ballWidth/2;
+let ballSpeedY = 5;
 
 
 window.onload = function(){
@@ -21,7 +20,7 @@ window.onload = function(){
 
 function drawEverything(){
   drawRect(0,0, canvas.width, canvas.height, 'black');  //defines a rectangle with the drawRect() function
-  drawRect(ballX,ballY, ballWidth, ballHeight, 'red');
+  drawCircle(ballX, ballY, ballRadius, 0, 'red');
 }
 
 function moveEverything() {
@@ -33,13 +32,24 @@ function drawRect(topX, topY, width, height, color) { // dry up code and make it
   canvasContext.fillRect(topX,topY, width, height);
 }
 
-function drawCircle(centerX, centerY, width, height, color) {
+function drawCircle(centerX, centerY, radius, height, color) {
+  canvasContext.fillStyle = color;
+  canvasContext.beginPath();
+  canvasContext.arc(centerX, centerY, radius, height, Math.PI*2, true);
+  canvasContext.fill();
+
 
 }
 
 function moveBall(){
   ballX += ballSpeedX;
-  if(ballX > canvas.width || ballX < 0){
+  ballY += ballSpeedY;
+
+  if(ballX + ballRadius > canvas.width || ballX - ballRadius < 0){
     ballSpeedX *= -1;
+  }
+
+  if(ballY + ballRadius > canvas.height || ballY - ballRadius < 0){
+    ballSpeedY *= -1;
   }
 }
