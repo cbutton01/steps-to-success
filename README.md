@@ -14,6 +14,8 @@
 
 I need to focus on skill development, especially with vanilla javascript.  I should spend time working through video tutorials and reading documentation.  I will post links and images in this README as well.
 
+I am passionate about game development, and ultimately that is where I want my career to go.  I should look into local meetups and game jams so that I can network and gain experience working on games.
+
 My Github needs to be cleaned up quite a lot.  There are files with commented out code, and many repositories do not have READMEs.  To resolve this I will spend time working through my projects adding READMEs and pruning content.
 
 My LinkedIn has typos and grammatical errors as well as unpolished content.  I need to craft my profile to present myself like a valuable asset.
@@ -23,16 +25,15 @@ It looks like my plan for my capstone project might fall through.  I have tried 
 My project from last Friday is also incomplete and I need that to be submitted before today is over.
 
 
-
-
 #### Work
 
   * Read prompt on epicenter
   * Complete Self-Assessment
   * Make a plan
 
-| Skill    |  Work      | Links     |
-| :--------: | :--------: | :--------: |
-| javascript | video tutorials | youtube link |
+| Skill    |  Work      | things learned | Links     |
+| :--------: | :--------: |:--------:| :--------: |
+| javascript | Udemy video tutorial by _Chris Deleon_ | Vanilla javascript fundamentals | https://www.udemy.com/code-your-first-game/learn/v4/overview |
+|
 
 #### Reflection & Next Steps
