@@ -34,6 +34,6 @@ My project from last Friday is also incomplete and I need that to be submitted b
 | Skill    |  Work      | things learned | Links     |
 | :--------: | :--------: |:--------:| :--------: |
 | javascript | Udemy video tutorial by _Chris Deleon_ | Vanilla javascript fundamentals such as native methods like setInterval(), fillRect(), and arc() | https://www.udemy.com/code-your-first-game/learn/v4/overview |
-|
+| LinkedIn | Clean up my LinkedIn | | https://www.linkedin.com/in/cameron-button/ |
 
 #### Reflection & Next Steps
