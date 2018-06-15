@@ -6,9 +6,14 @@ let ballSpeedX = 10;
 let ballSpeedY = 5;
 let player1Y = 250;
 let player1X = 10;
+let ballLeftEdge;
+let ballRightEdge;
+let ballBottomEdge;
+let ballTopEdge;
 
-const PADDLE_WIDTH = 15;
+const PADDLE_WIDTH = 10;
 const PADDLE_HEIGHT = 100;
+const PLAYER1_EDGE = player1X + PADDLE_WIDTH;
 
 function calculateMousePos(evt) {
   let rect = canvas.getBoundingClientRect();
@@ -24,7 +29,7 @@ function calculateMousePos(evt) {
 window.onload = function(){
   canvas = document.getElementById('pong-canvas'); //gets the canvas element from the dom by the id of pong-game
   canvasContext = canvas.getContext('2d');  //after looking at the getContext() method on mdn I now understand that this method returns a drawing context on the canvas
-  let fps = 1000/30; // I don't want the fps to be changed by anything in the program, so it will be limited to the scope of window.onload
+  let fps = 1000/60; // I don't want the fps to be changed by anything in the program, so it will be limited to the scope of window.onload
   setInterval(function(){ //an update all function isn't necessary since it wont be changed later
   drawEverything();
   moveEverything();
@@ -62,20 +67,23 @@ function drawCircle(centerX, centerY, radius, color) {
 function moveBall(){
   ballX += ballSpeedX;
   ballY += ballSpeedY;
+  ballLeftEdge = ballX - ballRadius;
+  ballRightEdge = ballX + ballRadius;
+  ballBottomEdge = ballY + ballRadius;
+  ballTopEdge = ballY - ballRadius;
 
-  if(ballX + ballRadius === canvas.width){
+  if(ballRightEdge === canvas.width){
     ballSpeedX *= -1;
   }
 
-  if(ballY + ballRadius === canvas.height || ballY - ballRadius === 0){
+  if(ballBottomEdge === canvas.height || ballTopEdge === 0){
     ballSpeedY *= -1;
   }
 
-  if ( ballX + ballRadius <= player1X + PADDLE_WIDTH) {
-    debugger;
+  if ( ballLeftEdge <= player1X + PADDLE_WIDTH) {
     if (ballY > player1Y && ballY < player1Y + PADDLE_HEIGHT) {
       ballSpeedX *= -1;
-    } else {
+    } else if(ballRightEdge < 0) {
       resetBall();
     }
   }
